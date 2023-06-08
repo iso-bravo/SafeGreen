@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col text-white items-center text-center">
           <p className="text-4xl mb-2">Learn More!</p>
           <button id="cola">
-            Registro
+            Sign In
           </button>
         </div>
       </div>

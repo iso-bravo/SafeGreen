@@ -45,7 +45,7 @@ export default function Seccion2() {
             <div className="flex flex-col items-center my-4">
             <FaLock className="text-white text-9xl hover:scale-125 transition-all duration-400 flex my-4" />
             <h1 className="font-bold text-white text-2xl flex my-4">
-              Secure transactions
+              Safe transactions
             </h1>
             <h2 className="my-4 text-gray-300 flex">
               Our project utilizes blockchain technology for secure
