@@ -7,7 +7,7 @@ type Props = {
 
 function Header({ isAccountVisible }: Props) {
   return (
-    <header className= "flex flex-row justify-between p-20">
+    <header className= "flex flex-row justify-between px-16 py-14">
       <Logo />
       {isAccountVisible && <Account />}
     </header>

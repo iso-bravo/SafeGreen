@@ -9,7 +9,7 @@ export default function Footer() {
         </div>
         <div className="inline-block h-full min-h-[1em] w-0.5 self-stretch bg-gray-300 opacity-100 dark:opacity-50"></div>
         <div className="flex flex-col text-white items-center text-center">
-          <p className="text-4xl mb-2">Register Now!</p>
+          <p className="text-4xl mb-2">Learn More!</p>
           <button id="cola">
             Registro
           </button>
