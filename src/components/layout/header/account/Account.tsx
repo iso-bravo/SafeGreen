@@ -22,7 +22,7 @@ function Account() {
       {account ? (
         <Wallet balance={account.balance} address={account.address} name={account.meta.name} onClick={openModal} />
       ) : (
-        <Button icon={userSVG} text="Sign in" onClick={openModal} />
+        <Button className='text-2xl hover:bg-[#21D803]' icon={userSVG} text="Sign in" onClick={openModal} />
       )}
       {isModalOpen && <AccountsModal accounts={accounts} close={closeModal} />}
     </>

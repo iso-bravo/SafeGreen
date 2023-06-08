@@ -1,6 +1,5 @@
 import { Logo } from './logo';
 import { Account } from './account';
-import styles from './Header.module.scss';
 
 type Props = {
   isAccountVisible: boolean;
@@ -8,7 +7,7 @@ type Props = {
 
 function Header({ isAccountVisible }: Props) {
   return (
-    <header className={styles.header}>
+    <header className= "flex flex-row justify-between p-20">
       <Logo />
       {isAccountVisible && <Account />}
     </header>
