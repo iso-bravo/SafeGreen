@@ -1,5 +1,14 @@
+import Seccion1 from "components/layout/header/seccion1";
+
 function Home() {
-  return <div>Home page</div>;
+  return(
+    <div>
+
+    <Seccion1/>
+    
+    </div>
+  ) 
+  
 }
 
 export { Home };

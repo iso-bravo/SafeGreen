@@ -4,7 +4,7 @@ import { ReactComponent as SVG } from 'assets/images/logo.svg';
 function Logo() {
   return (
     <Link to="/">
-      <SVG />
+      <h1 className='border border-white'>PlanetU</h1>
     </Link>
   );
 }
