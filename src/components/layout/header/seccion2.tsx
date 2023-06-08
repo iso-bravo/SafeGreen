@@ -4,7 +4,7 @@ import { FaLock } from "react-icons/fa";
 
 export default function Seccion2() {
   return (
-    <div className="my-60 py-36 bg-[#505369] font-Lexend rounded-lg">
+    <div className="py-36 bg-[#505369] font-Lexend rounded-lg">
       <div className="m-6">
         <div className="flex flex-col text-center">
           <h1 className="font-bold text-white text-6xl">What is it?</h1>
