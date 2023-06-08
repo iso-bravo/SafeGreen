@@ -3,14 +3,17 @@ import { web3FromSource } from "@polkadot/extension-dapp";
 import { decodeAddress, getProgramMetadata } from "@gear-js/api";
 import { Button } from "@gear-js/ui";
 
-function TransferButton() {
+interface Props {
+  amount: number;
+}
+function TransferButton({amount}: Props) {
   const alert = useAlert();
   const { accounts, account } = useAccount();
   const { api } = useApi();
 
    // Add your programID
   const programIDFT =
-    "0xb4c89824de15e0784990633e3c29564ae217234035df35dc4b0fefd265d2e691";
+    "0xede45aee475e6abad2e8e18d13d14247539f29d0e703bf580c5e53a31cc4876d";
 
   // Add your meta.txt
   const meta =
@@ -22,16 +25,17 @@ function TransferButton() {
     destination: programIDFT, // programId
     payload: {
       transfer: [
-        decodeAddress("From: address"),
-        decodeAddress("to: address"),
-        10,
+        decodeAddress(account!.address),
+        decodeAddress("5DFmuegcRsPdi6ACSbDBL6RsTxBhEGenbyvtkbFgSKSSxLD1"),
+        amount,
       ],
     },
     gasLimit: 899819245,
     value: 0,
   };
 
-  const signer = async () => {
+  const signer = async (e: any) => {
+    e.preventDefault()
     const localaccount = account?.address;
     const isVisibleAccount = accounts.some(
       (visibleAccount) => visibleAccount.address === localaccount
@@ -69,7 +73,14 @@ function TransferButton() {
     }
   };
 
-  return <Button text="Send Message and sing" onClick={signer} />;
+  return <button
+  className="bg-[#21D803] hover:bg-[#6aef55] px-6 py-5 w-full text-2xl
+          text-white focus:outline-none block
+          rounded-2xl focus:ring-1 my-16"
+          onClick={signer}
+  >
+  Complete Transaction
+  </button>;
 }
 
 export { TransferButton };

@@ -53,3 +53,53 @@
   background: #21D803;
   transition: background 0s;
  }
+
+ #colaa {
+  --color: #21D803;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin-top: 20px;
+  margin-left: 446px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ #colaa:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ #colaa:hover {
+  color: #fff;
+ }
+ 
+ #colaa:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ #colaa:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ #colaa:active:before {
+  background: #21D803;
+  transition: background 0s;
+ }

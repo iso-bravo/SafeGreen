@@ -1,6 +1,9 @@
 import cemda from "../../../assets/images/cemda.png";
+import {useNavigate} from 'react-router-dom'
 
 function Nombre() {
+    const navigate = useNavigate();
+
     return (
         <div className="bg-[#13152B] w-full h-[79vh]">
             <div className="flex flex-row justify-center align-middle gap-8">
@@ -13,7 +16,7 @@ function Nombre() {
                 </h2>
             </div>
             <div>
-                <button className="flex justify-center bg-[#21D803] ml-[39rem] my-12 px-8 py-3 text-2xl rounded-2xl font-semibold hover:bg-[#3de623]">Donate</button>
+                <button className="flex justify-center bg-[#21D803] ml-[39rem] my-12 px-8 py-3 text-2xl rounded-2xl font-semibold hover:bg-[#3de623]" onClick={() => navigate('/donate')}>Donate</button>
             </div>
         </div>
     );

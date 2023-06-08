@@ -1,6 +1,9 @@
 import eco from "../../../assets/images/eco.png";
 
+
 function Texto() {
+
+
     return (
         <div className="bg-[#25263E] w-full h-screen flex flex-row">
             <div className="w-2/3">
