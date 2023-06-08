@@ -11,11 +11,11 @@ function Component() {
   const isAppReady = isApiReady && isAccountReady;
 
   return (
-    <>
+    <div className='bg-[#13152B]'>
       <Header isAccountVisible={isAccountReady} />
       <main>{isAppReady ? <Routing /> : <ApiLoader />}</main>
       <Footer />
-    </>
+    </div>
   );
 }
 
